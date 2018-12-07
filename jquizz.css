@@ -15,7 +15,7 @@ body {
 
 #question {
     width: 80%;
-    margin: 8% 0 0 0;
+    margin: 8% 0 0 8%;
     border: 3px solid red;
     border-radius: 50px;
     justify-content: center;
@@ -71,7 +71,7 @@ body {
 
 #PageResulats {
     display : none;
-    margin: 5% 0 0 0;
+    margin: 5% 0 0 10%;
     width: 80%;
     justify-content: center;
 }
