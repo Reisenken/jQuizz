@@ -1,4 +1,4 @@
-var questions = [
+let questions = [
     {
         Question : "Où se trouvent les glandes sudoripares d'un chien ? ",
         BonneReponse : "Sous ses pattes",
@@ -83,18 +83,18 @@ var questions = [
     */
 ];
 
-var aleatoire = 0;
-var Breponse = 0;
-var Mreponse = 0;
-var id1 = 0;
-var id2 = 0;
-var id3 = 0;
+let aleatoire = 0;
+let Breponse = 0;
+let Mreponse = 0;
+let id1 = 0;
+let id2 = 0;
+let id3 = 0;
 
 console.log(questions);
 
 function Jeu() {
 
-var NbAlea = Math.round(Math.random() * 2);
+let NbAlea = Math.round(Math.random() * 2);
 
         $("#question").text(questions[aleatoire].Question);
         console.log("aleatoire = " + aleatoire);
@@ -117,7 +117,7 @@ var NbAlea = Math.round(Math.random() * 2);
         }
 }
 
-$("#proposition1").click(function() {
+$("#proposition1").on( "click",function() {
 
 if (aleatoire < questions.length - 1){
     console.log(aleatoire);
@@ -161,12 +161,13 @@ else {
 
     affichage();
     aleatoire++;
-    $("#PageJeu").css("display" ,"none");
-    $("#PageResulats").css("display","inherit");
+
+    $("#PageJeu").hide(1000);
+    $("#PageResulats").show(1000).delay(1000);
 }
 });
 
-$("#proposition2").click(function(){
+$("#proposition2").on("click", function(){
 
 if (aleatoire < questions.length - 1) {
 
@@ -210,13 +211,13 @@ else {
 
     affichage();
     aleatoire++;
-    $("#PageJeu").css("display" ,"hidden");
-    $("#PageResulats").css("display","inherit");
 
+    $("#PageJeu").hide(1000);
+    $("#PageResulats").show(1000).delay(1000);
 }
 });
 
-$("#proposition3").click(function(){
+$("#proposition3").on("click", function(){
 
 if (aleatoire < questions.length - 1) {
     if (id3 === 1) {
@@ -257,8 +258,8 @@ else {
 
     affichage();
 
-    $("#PageJeu").css("display" ,"hidden");
-    $("#PageResulats").css("display","inherit");
+    $("#PageJeu").hide(1000);
+    $("#PageResulats").show(1000).delay(1000);
 }
 
 });
@@ -267,7 +268,7 @@ Jeu();
 
 function affichage () {
     console.log(questions);
-        var newdiv = document.createElement("div");
+        let newdiv = document.createElement("div");
         document.getElementById("PageResulats").appendChild(newdiv);
         newdiv.style.width = "100%";
         newdiv.id = "div"+aleatoire;

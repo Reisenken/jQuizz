@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+
+#titre {
+    width: 100%;
+    border: 2px dotted white;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0;
+    align-items: center;
+}
+
+#question {
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+    border: 3px solid red;
+    border-radius: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    padding: 2%;
+    background-color: white;
+    color: blue;
+}
+
+#propositions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+#proposition1 {
+     width: 25%;
+    font-size: 1.5em;
+     border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding : 1%;
+    background-color: grey;
+    color: white;
+ }
+
+#proposition2 {
+    width: 25%;
+    font-size: 1.5em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding : 1%;
+    background-color: grey;
+    color: white;
+}
+
+#proposition3 {
+    width: 25%;
+    font-size: 1.5em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding : 1%;
+    background-color:grey;
+    color: white;
+}
+
+#PageResulats {
+    display : none;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    justify-content: center;
+}
+
+#proposition1:hover {
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    transform : scale(1.3);
+}
+
+#proposition2:hover {
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    transform : scale(1.3);
+}
+
+#proposition3:hover {
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    transform : scale(1.3);
+}
